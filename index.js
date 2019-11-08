@@ -92,7 +92,9 @@ class Car {
     if( fuelRequirements <= this.tank ){
       this.odometer+= distance;
       this.tank-= fuelRequirements;
-    }else{
+    }
+    
+    else{
      
       // fuel For entire trip
       const fuelDeficit= fuelRequirements - this.tank;
